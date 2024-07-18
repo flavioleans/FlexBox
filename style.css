@@ -1,0 +1,49 @@
+.container{
+    background-color: #ccc;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    /*ativa flexbox e junto traz flex-direction: row e flex-wrap: nowrap (quebra de linha)*/
+    /*a propriedade flex-flow serve para os dois parametros acima
+    ex: flex-flow: row wrap-reverse
+    */
+    justify-content: flex-start; 
+    /*alinhamento horizontal valor padrão flex-start (flex-center, flex-end) 
+    space-between (cria espaço entre os elementos) space-around (espaço entorno)*/
+    
+    align-items: flex-start;
+    /*alinha os itens na vertical, valor padrão é stretch que preenche a altura toda. 
+    demais valores (flex-start, center, flex-end)
+    o atributo baseline adiciona preenchimento acima ou abaixo sem tirar da linha base.
+    */
+
+    align-content: stretch;
+    /*Alinhamento vertical quando os itens estiverem em quebra(wrap)
+    valor padrão é stretch que preenche a altura toda. 
+    demais valores (flex-start, center, flex-end)
+    */
+}
+
+.item{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 5px;
+    height: 30px;
+  /*flex-grow: 1; /*largura igual para todos
+    flex-shrink: 1 /*tamanho menor ;
+    flex-basis: 20px; /*largura inicial*/
+    flex: 1 1 300px; /*resume as 3 propriedades acima*/
+
+
+}
+.article-01{
+    
+}
+/*trabalhando com os filhos do container*/
+/*
+order:3 define a ordem da posição
+align-self posição diferente aos demais e é posicionado de acordo com o flex-direction
+caso seja row sera vertial, caso seja colunm sera na horizontal.
+
+*/
